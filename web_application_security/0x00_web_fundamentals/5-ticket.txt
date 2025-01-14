@@ -1,1 +1,2 @@
-http://web0x00.hbtn/ticket?id=5
+GET /support/ticket?id=1 HTTP/1.1
+Host: web0x00.hbtn
