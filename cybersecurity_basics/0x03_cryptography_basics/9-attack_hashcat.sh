@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -n "$1" | sha256sum | awk '{print $1}' > 1_hash.txt
+hashcat -a 1 -m 0 $1 wordlist1.txt wordlist2.txt
