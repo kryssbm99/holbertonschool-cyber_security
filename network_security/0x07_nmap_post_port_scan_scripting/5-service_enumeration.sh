@@ -1,3 +1,2 @@
 #!/bin/bash
-
-nmap -A --script banner,ssl-enum-ciphers,default,smb-enum-domains $1 -oN service_enumeration_results.txt
+nmap -sV -O -sC --traceroute --script=banner,ssl-enum-ciphers,default,smb-enum-domains $1 > service_enumeration_results.txt
